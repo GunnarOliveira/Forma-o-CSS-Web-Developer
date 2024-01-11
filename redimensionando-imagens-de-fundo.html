@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redimensionando imagens de fundo dos elementos</title>
+
+    <style>
+      div {
+        margin-bottom: 30px;
+      }
+      .exemplo {
+        width: 300px;
+        height: 300px;
+        background-image: url(https://i.pinimg.com/736x/7a/5f/4f/7a5f4fdeb5d0aac00530e09bea810bce.jpg);
+      }
+      .auto {
+        background-size: auto;
+      }
+      .cover {
+        background-size: cover;
+      }
+      .contain {
+        background-size: contain;
+      }
+      .tamanho {
+        background-size: 50%;
+      }
+      .x-y {
+        background-size: 50% 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <code>background-size: auto;</code>(padrao)
+    <div class="exemplo auto"></div>
+    <code>background-size:cover;</code>
+    <div class="exemplo cover"></div>
+    <code>bakcground-size: contain;</code>
+    <div class="exemplo contain"></div>
+    <code>background-size:300px(%) (tamanho);</code>
+    <div class="exemplo tamanho"></div>
+    <code>background-size: x y</code>
+    <div class="exemplo x-y"></div>
+  </body>
+</html>
