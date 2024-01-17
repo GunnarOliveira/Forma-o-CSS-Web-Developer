@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Repetição das imagens de fundo</title>
+    <style>
+      div {
+        margin-bottom: 30px;
+      }
+      .exemplo {
+        width: 300px;
+        height: 300px;
+        background-image: url(https://i.pinimg.com/originals/c8/19/ea/c819ea7de93ede747b30aec2e35c9785.png);
+        background-size: 120px;
+      }
+      #repeat-x {
+        background-repeat: repeat-x;
+        border: 3px solid red;
+      }
+      #repeat-y {
+        background-repeat: repeat-y;
+        border: 3px solid red;
+      }
+      #space {
+        background-repeat: space;
+        border: 3px solid red;
+      }
+      #round {
+        background-repeat: round;
+      }
+      #no-repeat {
+        background-repeat: no-repeat;
+        border: 3px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Repetição das imagens de fundo</h1>
+    <code>background-repeat: repeat;</code>(padrao)
+    <div class="exemplo"></div>
+
+    <code>background-repeat: repeat-x;</code>
+    <div class="exemplo" id="repeat-x"></div>
+
+    <code>background-repeat: repeat-y;</code>
+    <div class="exemplo" id="repeat-y"></div>
+
+    <code>background-repeat: space</code>
+    <div class="exemplo" id="space"></div>
+
+    <code>background-repeat: round;</code>
+    <div class="exemplo" id="round"></div>
+
+    <code>background-repeat: no-repeat;</code>
+    <div class="exemplo" id="no-repeat"></div>
+  </body>
+</html>
