@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade border-image-source</title>
+    <style>
+      div {
+        margin-bottom: 20px;
+      }
+      .exemplo {
+        width: 200px;
+        height: 200px;
+      }
+      #exemplo-1 {
+        border-image-source: url(https://c4.wallpaperflare.com/wallpaper/662/966/394/japan-tokyo-street-building-wallpaper-preview.jpg);
+        border-image-slice: 80;
+        border-image-repeat: no-repeat;
+        border-image-width: 20px;
+      }
+      #exemplo-2 {
+        border-image-source: linear-gradient(
+          rgb(109, 54, 114),
+          rgb(211, 33, 211)
+        );
+        border-image-width: 20px;
+        border-image-slice: 80;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bordas com imagens</h1>
+    <ul>
+      <li>border-image-source</li>
+      <li>border-image-width</li>
+      <li>border-image-repeat</li>
+      <li>border-image-outset</li>
+      <li>border-image-slice</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div class="exemplo" id="exemplo-1"></div>
+    <div class="exemplo" id="exemplo-2"></div>
+  </body>
+</html>
