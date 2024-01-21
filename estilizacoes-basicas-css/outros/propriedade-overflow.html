@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade Overflow</title>
+    <style>
+      div {
+        background-color: orange;
+        border: 3px solid purple;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+      }
+      #hidden {
+        overflow: hidden;
+      }
+      #scroll {
+        overflow: scroll;
+      }
+      #auto {
+        overflow: auto;
+      }
+      #overflow-x {
+        /*posso aplicar todos os atributos da propriedade overflow porém apenas no eixo x*/
+        white-space: nowrap;
+        overflow-x: scroll;
+      }
+      #overflow-y {
+        /*posso aplicar todos os atributos da propriedade overflow, porém apenas no eixo y*/
+        overflow-y: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>overflow:;</code></h1>
+    <p>
+      Controla como o conteúdo deve ser exibido caso ultrapasse os limites do
+      container
+    </p>
+    <i>Exemplo:</i>
+    <br /><br />
+    <code>overflow: visible;</code> (Padrão)
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum
+        architecto saepe perspiciatis nemo impedit iste sit illum ratione in
+        illo ipsum possimus, excepturi pariatur recusandae omnis fuga similique
+        aliquid. Nulla!
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+        atque asperiores rem praesentium nam corporis quis nemo perspiciatis
+        molestias perferendis facere possimus nobis sunt doloremque, illum in.
+        Repellendus, cum nam.
+      </p>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <code>overflow: hidden;</code>
+    <div id="hidden">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ut
+        architecto aut quaerat, totam reiciendis fugiat numquam voluptatibus
+        nisi repellendus ullam iure commodi impedit aperiam facere sed,
+        veritatis harum dolore.
+      </p>
+      <p>
+        Molestiae ad nesciunt, dolore quaerat rerum, soluta est laudantium ipsa
+        dolores vero pariatur consequuntur possimus veniam minima fugit earum.
+        Quod saepe quae porro velit, optio iure beatae aspernatur? Similique,
+        possimus?
+      </p>
+    </div>
+    <br /><br />
+    <code>overflow:scroll;</code>
+    <div id="scroll">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ratione
+        optio dignissimos suscipit iste ducimus necessitatibus! Commodi vero qui
+        distinctio illo perspiciatis ea. Corrupti fugit deserunt quis, odio
+        quisquam ipsum?
+      </p>
+      <p>
+        Necessitatibus odit perspiciatis provident ipsam saepe ducimus nisi
+        distinctio assumenda illo, voluptatum asperiores consectetur eos
+        eligendi sint eaque iste nihil, dolor fugiat! A odit veniam recusandae
+        esse nulla et eius?
+      </p>
+    </div>
+    <br /><br />
+    <code>overflow: auto;</code>
+    <div id="auto">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit molestias
+        autem praesentium modi veniam impedit, eos nisi ab deserunt neque
+        eligendi minus quibusdam mollitia et ipsa odio temporibus aliquam
+        asperiores.
+      </p>
+      <p>
+        Debitis dolorum, laboriosam iusto rerum dolorem aperiam cumque soluta
+        praesentium mollitia quod vitae voluptatibus similique, ex id possimus.
+        Ipsam deleniti expedita harum quasi laborum. Culpa perferendis dolorem
+        ex optio voluptates.
+      </p>
+    </div>
+    <br /><br />
+    <code>overflow-x</code>
+    <div id="overflow-x">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae eos
+        nostrum autem numquam tempora totam reiciendis nihil reprehenderit sit
+        corporis debitis, quidem consequuntur ad asperiores rem quo. Quod, aut
+        sint?
+      </p>
+      <p>
+        Enim cum expedita accusamus non molestiae quam ad! Incidunt, nesciunt
+        officia. Voluptate, modi fuga aliquam facere voluptas earum totam, sequi
+        dignissimos suscipit, sit delectus quis tempora tenetur expedita
+        officiis dolores.
+      </p>
+    </div>
+    <br /><br />
+    <code>overflow-y</code>
+    <div id="overflow-y">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos
+        amet asperiores temporibus fuga. Laudantium, eum tempora? Voluptates
+        numquam, error eius blanditiis sint expedita libero ipsum animi vitae
+        vero quibusdam exercitationem?
+      </p>
+      <p>
+        Quidem enim inventore voluptatum officiis doloribus iste quae
+        reprehenderit sunt nesciunt! Quibusdam id, doloremque odit fugiat aut
+        atque aperiam iure nemo temporibus aliquid amet quas. Deserunt quia
+        ullam unde quis!
+      </p>
+    </div>
+  </body>
+</html>

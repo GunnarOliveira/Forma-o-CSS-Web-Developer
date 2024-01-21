@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chasert="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterando o tamanho das fontes com font-size</title>
+    <style>
+      div {
+        font-size: 20px;
+      }
+      div p {
+        font-size: larger; /*Se baseia no tamanho do elemento pai(larger ou smaller terão essa característica de tamanho relativo)*/
+      }
+      #tamanho {
+        font-size: 50px;
+      }
+      #xx-small {
+        font-size: xx-small;
+      }
+      #x-small {
+        font-size: x-small;
+      }
+      #small {
+        font-size: small;
+      }
+      #medium {
+        font-size: medium;
+      }
+      #large {
+        font-size: large;
+      }
+      #x-large {
+        font-size: x-large;
+      }
+      #xx-large {
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>font-size:;</code></h1>
+    <p id="tamanho">Alterando o tamanho do texto</p>
+    <code>font-size: xx-small;</code>
+    <p id="xx-small">xx-small</p>
+
+    <code>font-size: x-small;</code>
+    <p id="x-small">x-small</p>
+
+    <code>font-size: small;</code>
+    <p id="small">small</p>
+
+    <code>font-size: medium;</code>
+    <p id="medium">medium</p>
+
+    <code>font-size: large;</code>
+    <p id="large">large</p>
+
+    <code>font-size: x-large;</code>
+    <p id="x-large">x-large</p>
+
+    <code>font-size: xx-large;</code>
+    <p id="xx-large">xx-large</p>
+
+    <hr />
+    <div>
+      Elemento Pai
+      <p>Elemento Filho</p>
+    </div>
+  </body>
+</html>

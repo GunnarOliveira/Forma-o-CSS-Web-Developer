@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head lang="pt/br">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade white-spacing</title>
+    <style>
+      .exemplo {
+        width: 200px;
+        background-color: chartreuse;
+      }
+      span {
+        background-color: seagreen;
+        color: white;
+      }
+      #normal {
+        white-space: normal;
+      }
+      #nowrap {
+        white-space: nowrap;
+      }
+      #pre {
+        white-space: pre;
+      }
+      #pre-line {
+        white-space: pre-line;
+      }
+      #pre-wrap {
+        white-space: pre-wrap;
+      }
+      #break-space {
+        white-space: break-spaces;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>white-spacing</code></h1>
+    <p>
+      Define como os espaços em branco do texto de um determinado elemento irá
+      se comportar
+    </p>
+    <p><i>Exemplos:</i></p>
+    <code>white-space: normal;</code>
+    <p class="exemplo" id="normal">
+      <span
+        >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+        reprehenderit fugiat, vitae cum sit ducimus fugit vero incidunt saepe
+        aut sapiente eius consequatur et culpa eligendi. Molestias sed fugit
+        dolore.</span
+      >
+    </p>
+    <code>white-space: nowrap;</code>
+    <p class="exemplo" id="nowrap">
+      <span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio velit
+        perspiciatis iure ducimus dolores quis mollitia, laborum dolorem
+        repellat odio illum corrupti accusantium, rerum aperiam odit eum fugiat
+        ab voluptatum!
+      </span>
+    </p>
+    <code>white-space:pre;</code>
+    <p class="exemplo" id="pre">
+      <span>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+        vitae explicabo non sequi debitis. Harum rerum quasi repellendus ratione
+        corrupti corporis quia excepturi quod voluptatem. Dolorem, vitae. Quasi,
+        soluta mini ma !
+      </span>
+    </p>
+    <code>white-space:pre-line;</code>
+    <p class="exemplo" id="pre-line">
+      <span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore id
+        error dolor, eos nulla alias porro voluptates ut quibusdam repellendus
+        labore qui magnam. Iusto voluptates quasi voluptate eius consequuntur
+        illo.
+      </span>
+    </p>
+    <code>white-space:pre-wrap;</code>
+    <p class="exemplo" id="pre-wrap">
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt
+        iste cumque a quae quas, explicabo ad veniam dignissimos non, dolore
+        odit at obcaecati tenetur nam ex. Dolorem, facilis a?
+      </span>
+    </p>
+    <code>white-space:break-spaces;</code>
+    <p class="exemplo" id="break-spaces">
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nesciunt
+        iste cumque a quae quas, explicabo ad veniam dignissimos non, dolore
+        odit at obcaecati tenetur nam ex. Dolorem, facilis a?
+      </span>
+    </p>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efeito de sombra nos elementos</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: salmon;
+        border: 10px solid brown;
+        margin: 20px auto;
+        box-shadow: inset 20px 20px 25px 7px red, 20px 20px 7px black;
+      }
+      figure {
+        border: 1px solid red;
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+      }
+      img {
+        border: 1px solid green;
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(5px 5px 5px black);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Propriedade <code>shadow-box:;</code></h1>
+    <div></div>
+    <hr />
+    <h1>Propriedade <code>drop-shadow:;</code></h1>
+    <figure>
+      <img src="https://cdn-icons-png.flaticon.com/128/24/24429.png" />
+    </figure>
+  </body>
+</html>
