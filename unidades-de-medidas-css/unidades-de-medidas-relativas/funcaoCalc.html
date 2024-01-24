@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculando valores com CSS</title>
+    <style>
+      div {
+        padding: 10px;
+      }
+      .exemplo-1 {
+        background-color: yellow;
+        width: 300px;
+        box-sizing: border-box;
+      }
+      .exemplo-2 {
+        box-sizing: border-box;
+        background-color: palevioletred;
+        width: calc(2rem + 30px);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Função calc()</h1>
+    <div class="exemplo-1">
+      Elemento pai
+      <div class="exemplo-2">Elemento filho</div>
+    </div>
+  </body>
+</html>

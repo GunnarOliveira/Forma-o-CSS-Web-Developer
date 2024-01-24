@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unidade de medida relativa em</title>
+    <!--A unidade de medida relativa "em" vai ser calculado com base no font size
+    do elemento pai, por base 1em = 16px por conta do font-size padrão do body, ou seja,
+    se eu tiver um elemento pai com font-size de 20px e colocar pra o meu elemento filho
+    o font-size de 2em o resultado será de 2x20 = 40px. caso eu utilize a unidade para setar um width
+    ele vai mutiplicar o valor setado da width pelo font-size do próprio elemento filho. Digamos que meu elemento filho
+    está com 20px de font-size e eu resolva colocar meu width com 5em, então o resultado da minha width será de 5x20 = 100; 
+    -->
+    <style>
+      p {
+        margin: 0;
+      }
+      div {
+        padding: 10px;
+      }
+      .exemplo-1 {
+        background-color: yellow;
+        font-size: 20px;
+      }
+      .exemplo-2 {
+        background-color: palevioletred;
+        font-size: 2em;
+      }
+      .exemplo-3 {
+        background-color: aqua;
+        font-size: 2em;
+      }
+      .exemplo-4 {
+        background-color: palevioletred;
+        font-size: 30px;
+        width: 10em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Unidade de medida em</h1>
+    <p style="font-size: 1em">font-size: 1em; = 16px</p>
+    <p style="font-size: 2em">font-size: 2em; = 32px</p>
+    <p style="font-size: 3em">font-size: 3em; = 48px</p>
+    <br /><br />
+    <div class="exemplo-1">
+      font-size:20px;
+      <div class="exemplo-2">
+        font-size: 2em; = 40px
+        <div class="exemplo-3">font-size: 2em; = 80px</div>
+      </div>
+    </div>
+    <br /><br />
+    <div class="exemplo-4">
+      <p>font-size; 30px;</p>
+      <p>width; 10em; = 300</p>
+    </div>
+  </body>
+</html>
