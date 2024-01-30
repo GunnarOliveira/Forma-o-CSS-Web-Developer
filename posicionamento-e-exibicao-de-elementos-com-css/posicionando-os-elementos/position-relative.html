@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Propriedade position: relative;</title>
+    <style>
+      .exemplo {
+        border-radius: 5px;
+        width: 140px;
+        height: 140px;
+        margin: 10px;
+        padding: 10px;
+        font-family: sans-serif;
+      }
+      #elemento-01 {
+        display: inline-block;
+        background-color: darkorange;
+      }
+      #elemento-02 {
+        display: inline-block;
+        background-color: palevioletred;
+        position: relative;
+        right: 50px;
+        top: 50px;
+      }
+      #elemento-03 {
+        display: inline-block;
+        background-color: palegreen;
+      }
+      #elemento-a {
+        background-color: aquamarine;
+      }
+      #elemento-b {
+        background-color: violet;
+        position: relative;
+        left: 100px;
+      }
+      #elemento-c {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Posicionando os elementos em tela</h1>
+    <p>
+      A propriedade position vai nos ajudar a manipular a localização/posição do
+      elemento na sua página.
+    </p>
+    <ul>
+      <li><code>position: static;</code></li>
+      <li><code>position: relative;</code></li>
+      <li><code>position: absoltute;</code></li>
+      <li><code>position: fixed;</code></li>
+      <li><code>position: sticky;</code></li>
+    </ul>
+    <p><strong>Exemplos:</strong></p>
+    <div class="exemplo" id="elemento-01">Elemento 01</div>
+    <div class="exemplo" id="elemento-02">Elemento 02</div>
+    <div class="exemplo" id="elemento-03">Elemento 03</div>
+    <hr />
+    <div class="exemplo" id="elemento-a">Exemplo A</div>
+    <div class="exemplo" id="elemento-b">Exemplo B</div>
+    <div class="exemplo" id="elemento-c">Exemplo C</div>
+  </body>
+</html>
