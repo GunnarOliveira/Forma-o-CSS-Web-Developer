@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conceitos flex box</title>
+    <style>
+      .container {
+        background-color: palegreen;
+        padding: 10px;
+        display: inline-flex;
+        /*
+            inline-flex transforma o container pai
+            numa espécie de elemento inline-block,
+            mas com propriedades flex, sendo assim 
+            caso ocorra como no exemplo abaixo; 
+            dois elementos pais com esta mesma 
+            propriedade aplicada,ocorrerá, que se for possível 
+            em questões de espaçamento eles
+            ficarão lado à lado, mas caso 
+            não tenha espaço, eles ficarão 
+            um debaixo do outro.
+        */
+      }
+      .item {
+        margin: 10px;
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+    </div>
+    <div class="container">
+      <div class="item">Item 10</div>
+      <div class="item">Item 11</div>
+      <div class="item">Item 12</div>
+      <div class="item">Item 13</div>
+      <div class="item">Item 14</div>
+      <div class="item">Item 15</div>
+      <div class="item">Item 16</div>
+      <div class="item">Item 17</div>
+      <div class="item">Item 18</div>
+    </div>
+  </body>
+</html>

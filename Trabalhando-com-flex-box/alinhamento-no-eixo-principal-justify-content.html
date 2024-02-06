@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Propriedade de alinhamento para elementos flex: justify-content
+    </title>
+    <style>
+      .container {
+        background-color: palegreen;
+        margin: 15px;
+        display: flex;
+        width: 300px;
+      }
+      .item {
+        background-color: orange;
+      }
+      #container-01 {
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      #container-02 {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container-01">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+    </div>
+    <div class="container" id="container-02">
+      <div class="item">Item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+    </div>
+  </body>
+</html>

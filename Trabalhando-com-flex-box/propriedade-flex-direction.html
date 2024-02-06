@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Direção do flexbox com a propriedade Flex-direction</title>
+    <style>
+      .container {
+        background-color: palegreen;
+        padding: 10px;
+      }
+      .item {
+        background-color: orange;
+        margin: 10px;
+      }
+      #row {
+        display: flex;
+        flex-direction: row; /*default value*/
+      }
+      #row-reverse {
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      #column {
+        display: flex;
+        flex-direction: column;
+      }
+      #column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 600px; /*Para poder observar melhor de onde começa os elementos 
+            com o atributo column-reverse setado no elemento pai
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="row">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+    </div>
+    <br />
+    <br />
+    <div class="container" id="row-reverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+    </div>
+    <br />
+    <br />
+    <div class="container" id="column">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+    </div>
+    <br />
+    <br />
+    <div class="container" id="column-reverse">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+    </div>
+  </body>
+</html>

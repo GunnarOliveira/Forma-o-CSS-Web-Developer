@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quebra de linhas e colunas com flex-wrap</title>
+    <style>
+      .container {
+        background-color: palegreen;
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        /*flex-wrap só possue 3 valores: wrap, nowrap(default) e wrap-reverse;*/
+      }
+      .item {
+        background-color: orange;
+        margin: 10px;
+      }
+      #container-01 {
+        flex-direction: row;
+      }
+      #container-02 {
+        flex-direction: column;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container-01">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+    </div>
+    <div class="container" id="container-02">
+      <div class="item">Item 01</div>
+      <div class="item">Item 02</div>
+      <div class="item">Item 03</div>
+      <div class="item">Item 04</div>
+      <div class="item">Item 05</div>
+      <div class="item">Item 06</div>
+      <div class="item">Item 07</div>
+      <div class="item">Item 08</div>
+      <div class="item">Item 09</div>
+      <div class="item">Item 10</div>
+    </div>
+  </body>
+</html>

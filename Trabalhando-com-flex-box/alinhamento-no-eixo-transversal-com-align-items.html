@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento no eixo transversal com align-items</title>
+    <style>
+      main {
+        height: 640px;
+      }
+      .code-top {
+        font-size: 1rem;
+        font-weight: bold;
+        margin-top: 5px;
+        position: absolute;
+        top: 0;
+      }
+      .code-bottom {
+        font-size: 1rem;
+        font-weight: bold;
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 5px;
+      }
+      .row {
+        height: 340px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      .container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        background-color: palegreen;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .item {
+        background-color: orange;
+      }
+      .item-01 {
+        width: 50px;
+        height: 50px;
+      }
+      .item-02 {
+        width: 80px;
+        height: 80px;
+      }
+      .item-03 {
+        width: 40px;
+        height: 40px;
+      }
+
+      #container-01 {
+        flex-direction: row;
+        align-items: center;
+      }
+      #container-02 {
+        flex-direction: column;
+        align-items: center;
+      }
+      #container-03 {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      #container-04 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      #container-05 {
+        flex-direction: row;
+        align-items: flex-end;
+      }
+      #container-06 {
+        flex-direction: column;
+        align-items: flex-end;
+      }
+      #container-07 {
+        flex-direction: row;
+        align-items: stretch;
+      }
+      #container-08 {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="row">
+        <div class="container" id="container-01">
+          <code class="code-top">align-items: center;</code>
+          <div class="item item-01">item 01</div>
+          <div class="item item-02">item 02</div>
+          <div class="item item-03">item 03</div>
+        </div>
+        <div class="container" id="container-02">
+          <code class="code-top">align-items: center;</code>
+          <div class="item item-01">item 01</div>
+          <div class="item item-02">item 02</div>
+          <div class="item item-03">item 03</div>
+        </div>
+        <div class="container" id="container-03">
+          <code class="code-bottom">align-items:flex-start;</code>
+          <div class="item item-01">item 01</div>
+          <div class="item item-02">item 02</div>
+          <div class="item item-03">item 03</div>
+        </div>
+        <div class="container" id="container-04">
+          <code class="code-top">align-items: flex-start;</code>
+          <div class="item item-01">item 01</div>
+          <div class="item item-02">item 02</div>
+          <div class="item item-03">item 03</div>
+        </div>
+      </section>
+      <section class="row">
+        <div class="container" id="container-05">
+          <code class="code-top">align-items: flex-end;</code>
+          <div class="item item-01">item 01</div>
+          <div class="item item-02">item 02</div>
+          <div class="item item-03">item 03</div>
+        </div>
+        <div class="container" id="container-06">
+          <code class="code-top">align-items: flex-end;</code>
+          <div class="item item-01">item 01</div>
+          <div class="item item-02">item 02</div>
+          <div class="item item-03">item 03</div>
+        </div>
+        <div class="container" id="container-07">
+          <code class="code-bottom">align-items: stretch;</code>
+          <div class="item">item-01</div>
+          <div class="item">item-02</div>
+          <div class="item">item-03</div>
+        </div>
+        <div class="container" id="container-08">
+          <code class="code-top">align-items: stretch;</code>
+          <div class="item">item-01</div>
+          <div class="item">item-02</div>
+          <div class="item">item-03</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

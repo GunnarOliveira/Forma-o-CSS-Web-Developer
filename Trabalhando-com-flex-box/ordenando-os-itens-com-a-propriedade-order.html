@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ordenando os itens com a propriedade order</title>
+    <style>
+      .container {
+        width: 300px;
+        background-color: blueviolet;
+        display: flex;
+        margin-bottom: 10px;
+        padding: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .item {
+        background-color: yellow;
+        padding: 8px;
+      }
+      #container {
+        flex-flow: wrap column;
+      }
+      #container-02 {
+        flex-flow: wrap column;
+      }
+      .item-10 {
+        order: -1;
+        /*
+            por padrão todos os itens vêm com este valor setado 0
+            e são ordenados a partir da ordem de declaração no arquivo html
+        */
+      }
+      .item-1 {
+        order: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="container-01">
+      <div class="item item-1">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+      <div class="item">item 05</div>
+      <div class="item">item 06</div>
+      <div class="item">item 07</div>
+      <div class="item">item 08</div>
+      <div class="item">item 09</div>
+      <div class="item item-10">item 10</div>
+    </div>
+    <div class="container" id="container-02">
+      <div class="item item-1">item 01</div>
+      <div class="item">item 02</div>
+      <div class="item">item 03</div>
+      <div class="item">item 04</div>
+      <div class="item">item 05</div>
+      <div class="item">item 06</div>
+      <div class="item">item 07</div>
+      <div class="item">item 08</div>
+      <div class="item">item 09</div>
+      <div class="item item-10">item 10</div>
+    </div>
+  </body>
+</html>
