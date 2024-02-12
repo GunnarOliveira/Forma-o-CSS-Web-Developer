@@ -1,0 +1,31 @@
+.container {
+  background-color: yellow;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(130px, 300px));
+}
+.item {
+  border: 1px solid black;
+}
+.item-01 {
+  background-color: palevioletred;
+}
+.item-02 {
+  background-color: cornflowerblue;
+}
+.item-03 {
+  background-color: plaegreen;
+}
+.item-04 {
+  background-color: darkorange;
+}
+.item-05 {
+  background-color: darkcyan;
+}
+.item-06 {
+  background-color: cyan;
+}
+.item-07 {
+  background-color: tomato;
+}

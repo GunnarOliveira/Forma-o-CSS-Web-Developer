@@ -1,0 +1,45 @@
+.container {
+  height: 500px;
+  background-color: yellow;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: column; /* 
+  serve para posicionar os elementos que estão fora da declaração
+  principal(explícita) das linhas e colunas e colocará elas numa nova coluna.
+  esta propriedade também tem como valor aceito: row e também dense.
+  */
+  grid-auto-columns: 1fr;
+  /*
+  grid-auto-columns:; e grid-auto-rows:; irão definir as dimensões
+  que os grid-items implícitos(elementos dentro do container-grid que 
+  estão fora da declarção setada pelo dev nas propriedades grid-template-columns
+  e grid-template-rows)
+  irão ter
+  */
+}
+.item {
+  border: 1px solid black;
+}
+.item-01 {
+  background-color: palevioletred;
+}
+.item-02 {
+  background-color: cornflowerblue;
+}
+.item-03 {
+  background-color: palegreen;
+}
+.item-04 {
+  background-color: darkorange;
+}
+.item-05 {
+  background-color: darkcyan;
+}
+.item-06 {
+  background-color: cyan;
+}
+.item-07 {
+  background-color: tomato;
+}
