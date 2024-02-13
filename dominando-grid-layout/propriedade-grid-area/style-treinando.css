@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas: "nav logo" "aside main" "aside footer";
+}
+
+.logo {
+  background-color: skyblue;
+  grid-area: logo;
+}
+nav {
+  background-color: darkorange;
+  grid-area: nav;
+}
+aside {
+  background-color: palegreen;
+  grid-area: aside;
+}
+main {
+  background-color: palevioletred;
+  grid-area: main;
+  padding: 20px;
+  text-align: justify;
+  overflow: auto;
+}
+footer {
+  background-color: blueviolet;
+  grid-area: footer;
+}

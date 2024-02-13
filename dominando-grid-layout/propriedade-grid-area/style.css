@@ -1,0 +1,36 @@
+.container {
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: [primeira-linha-col] 1fr [segunda-linha-col] 1fr [terceira-linha-col] 1fr [quarta-linha-col];
+  grid-template-rows: [primeira-linha-row] 150px [meio-linha-row] 150px [ultima-linha-row];
+}
+.item {
+  background-color: deeppink;
+  color: #fff;
+  text-align: center;
+  border: 1px solid blueviolet;
+}
+#item-01 {
+  background-color: cyan;
+
+  /*syntax grid-area: <row-start> / <column-start> / <row-end> / <column-end>;*/
+  grid-area: meio-linha-row / segunda-linha-col / ultima-linha-row /
+    terceira-linha-col;
+
+  /* outras formas de declarar: 
+
+
+  grid-column-start: segunda-linha-col;
+  grid-column-end: terceira-linha-col;
+  grid-row-start: meio-linha-row;
+  grid-row-end: ultima-linha-row;
+
+  
+  grid-column: segunda-linha-col / terceira-linha-col;
+  grid-row: meio-linha-row / ultima-linha-row;
+
+
+  grid-column: segunda-linha-col / span 1;
+  grid-row: meio-linha-row / span 1;
+  */
+}

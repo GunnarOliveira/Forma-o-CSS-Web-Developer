@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "header header header header"
+    "main main sidebar sidebar" "footer footer footer footer";
+}
+
+header {
+  background-color: orange;
+  grid-area: header;
+}
+main {
+  background-color: deepskyblue;
+  grid-area: main;
+}
+aside {
+  background-color: lightcoral;
+  grid-area: sidebar;
+}
+footer {
+  background-color: yellowgreen;
+  grid-area: footer;
+}
