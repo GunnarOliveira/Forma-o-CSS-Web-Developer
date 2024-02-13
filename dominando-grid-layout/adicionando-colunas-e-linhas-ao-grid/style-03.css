@@ -1,0 +1,17 @@
+.container {
+  border: 5px solid cornflowerblue;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+#item-01 {
+  background-color: darkcyan;
+  grid-column: 2;
+  grid-row: 2;
+}
+.item {
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+}

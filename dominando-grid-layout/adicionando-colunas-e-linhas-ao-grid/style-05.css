@@ -1,0 +1,23 @@
+.container {
+  border: 3px solid darkcyan;
+  display: grid;
+  grid-template-columns: [first-column-line]1fr [second-column-line]1fr [third-column-line]1fr [last-column-line];
+  grid-template-rows: [start-row-line] 100px [middle-row-line]100px [last-row-line];
+}
+.item {
+  border: 2px solid blueviolet;
+  background-color: deeppink;
+  color: #fff;
+  text-align: center;
+}
+#item-01 {
+  background-color: darkcyan;
+  grid-column: second-column-line / third-column-line;
+  grid-row: middle-row-line / last-row-line;
+
+  /*
+  grid-column-start: second-column-line;
+  grid-column-end: third-column-line;
+  grid-row-start: middle-row-line;
+  grid-row-end: last-row-line;*/
+}
