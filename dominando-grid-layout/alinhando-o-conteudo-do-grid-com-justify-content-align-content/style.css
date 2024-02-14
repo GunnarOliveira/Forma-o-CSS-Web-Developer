@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  height: 80vh;
+  grid-template: repeat(3, 1fr) / repeat(3, 200px);
+  place-content: center; /*shorthand de justify-content e align-content*/
+  /*
+  
+  quando sobra espaço no container e u posso posicionar a grade com justify-content:; 
+  para o eixo x e align-items para o eixo y
+
+
+  justify-content: center;
+  align-content: space-evenly;
+ */
+  border: 2px solid red;
+}
+.item {
+  background-color: blueviolet;
+  border: 1px solid;
+}

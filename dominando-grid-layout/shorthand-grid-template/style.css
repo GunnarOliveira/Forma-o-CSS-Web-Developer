@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  /*grid-template: <grid-template-rows> / <grid-template-columns>;*/
+  grid-template: "header header header header" 100px "main main . aside" 300px "footer footer footer footer" 100px / 1fr 3fr 1fr 1fr;
+}
+header {
+  background-color: darkorange;
+  grid-area: header;
+}
+main {
+  background-color: skyblue;
+  grid-area: main;
+}
+aside {
+  background-color: palevioletred;
+  grid-area: aside;
+}
+footer {
+  background-color: yellowgreen;
+  grid-area: footer;
+}
