@@ -1,0 +1,9 @@
+body {
+  font-family: arial;
+}
+.container {
+  column-width: 300px; /*define um valor para a coluna, mas o navegador
+  que vai se encarregar de calcular a quantidade de colunas possíveis para o valor setado*/
+  column-rule: 1px solid gray; /*cria uma divisória bem no centro entre as colunas*/
+  column-gap: 30px; /*Espaçamento entre as colunas*/
+}
