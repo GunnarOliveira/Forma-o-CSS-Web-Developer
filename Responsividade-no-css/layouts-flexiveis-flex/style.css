@@ -70,8 +70,10 @@ footer {
     margin: 10px 0;
   }
 }
-@media screen and (orientation: landscape) {
-  * {
-    color: red;
+/*
+  @media screen and (orientation: landscape) {
+  header {
+    color: white;
   }
 }
+*/
