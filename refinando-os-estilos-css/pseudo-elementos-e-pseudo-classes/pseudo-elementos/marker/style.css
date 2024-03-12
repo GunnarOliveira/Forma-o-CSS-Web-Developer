@@ -1,0 +1,14 @@
+code {
+  background-color: #c5c5c5;
+  font-weight: bold;
+}
+summary::marker {
+  color: blueviolet;
+  font-size: 1rem;
+  content: "@";
+}
+li::marker {
+  color: tomato;
+  font-size: 1rem;
+  content: "+";
+}

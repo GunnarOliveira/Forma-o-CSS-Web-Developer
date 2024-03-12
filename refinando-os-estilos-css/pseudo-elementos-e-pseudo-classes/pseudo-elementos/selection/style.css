@@ -1,0 +1,22 @@
+code {
+  background-color: #c5c5c5;
+  font-weight: bold;
+}
+::selection {
+  background-color: black;
+  color: white;
+}
+h1::selection {
+  background-color: blueviolet;
+  color: white;
+}
+code::selection {
+  background-color: tomato;
+  color: white;
+}
+li::selection,
+li::marker {
+  background-color: red;
+  color: black;
+  content: "+";
+}

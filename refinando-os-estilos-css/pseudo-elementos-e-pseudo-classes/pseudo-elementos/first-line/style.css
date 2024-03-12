@@ -1,0 +1,11 @@
+code {
+  background-color: #c2c2c2;
+  font-weight: bold;
+}
+
+p::first-line {
+  color: blue;
+  background-color: lightblue;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
