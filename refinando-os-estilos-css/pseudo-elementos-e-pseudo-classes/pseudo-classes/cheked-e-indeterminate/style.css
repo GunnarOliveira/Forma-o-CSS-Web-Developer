@@ -1,0 +1,7 @@
+input {
+  accent-color: red;
+}
+input:checked + label {
+  text-decoration: line-through;
+  color: red;
+}

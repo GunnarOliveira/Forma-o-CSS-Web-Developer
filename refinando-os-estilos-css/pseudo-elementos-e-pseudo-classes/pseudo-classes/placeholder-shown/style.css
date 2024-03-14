@@ -1,0 +1,10 @@
+label {
+  display: block;
+  margin: 15px;
+}
+input:placeholder-shown {
+  background-color: royalblue;
+}
+input::placeholder {
+  color: white;
+}

@@ -1,0 +1,13 @@
+button:disabled {
+  background-color: black;
+  color: yellow;
+}
+button:enabled {
+  background-color: palevioletred;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+}
+button:enabled:active {
+  background-color: brown;
+}

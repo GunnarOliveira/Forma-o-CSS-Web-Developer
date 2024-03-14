@@ -1,0 +1,27 @@
+label,
+button {
+  display: block;
+  margin: 12px;
+  font-size: 1.5rem;
+}
+input,
+select {
+  font-size: 1.5rem;
+}
+input:focus {
+  outline: 2px dashed blue;
+}
+select:focus {
+  background-color: yellow;
+  color: blueviolet;
+}
+button:focus-visible {
+  outline: 3px solid red;
+  outline-offset: 3px;
+  background-color: palevioletred;
+  color: white;
+}
+label:focus-within {
+  color: red;
+  font-weight: bold;
+}

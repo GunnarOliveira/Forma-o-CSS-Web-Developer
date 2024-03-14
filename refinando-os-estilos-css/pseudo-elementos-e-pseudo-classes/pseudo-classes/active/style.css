@@ -1,0 +1,20 @@
+.button {
+  padding: 8px 14px;
+  background-color: palevioletred;
+  border: none;
+  color: white;
+}
+.button:hover {
+  background-color: rgb(184, 72, 109);
+  cursor: pointer;
+}
+.button:active {
+  background-color: purple;
+}
+a:active {
+  background-color: black;
+  color: white;
+}
+h1:active {
+  background-color: greenyellow;
+}
