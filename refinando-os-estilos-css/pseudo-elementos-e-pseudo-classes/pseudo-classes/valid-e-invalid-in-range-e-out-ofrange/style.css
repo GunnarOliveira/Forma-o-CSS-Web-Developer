@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+div {
+  display: flex;
+  flex-direction: column;
+}
+div > span > input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid;
+  padding: 20px;
+}
+form > input {
+  width: 70%;
+  padding: 5px;
+  font-size: 1rem;
+}
+form > label {
+  margin-top: 15px;
+}
+form > input[type="submit"] {
+  margin-top: 10px;
+  width: fit-content;
+  padding: 3px;
+}
+/*
+input:valid {
+  border: 1px solid green;
+  color: green;
+}
+
+input:invalid {
+  border: 1px solid red;
+  color: red;
+}
+span > input:valid + label {
+  color: green;
+}
+span > input:invalid + label {
+  color: red;
+}
+*/
+
+input:in-range {
+  border: 1px solid rgb(28, 168, 28);
+  color: rgb(28, 168, 28);
+}
+input:out-of-range,
+input:invalid {
+  border: 1px solid orangered;
+  color: orangered;
+}
+
+.error {
+  color: orangered;
+  display: none;
+  margin-top: 5px;
+}
+
+input:invalid + .error {
+  display: block;
+}
