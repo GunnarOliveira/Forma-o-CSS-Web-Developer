@@ -1,0 +1,31 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  border: 1px solid #adadad;
+  border-radius: 4px;
+  padding: 20px;
+}
+form > input,
+form > label {
+  display: block;
+}
+form label {
+  margin-top: 5px;
+}
+input {
+  margin-bottom: 15px;
+  padding: 5px;
+  border-style: solid;
+}
+
+input:required {
+  border-color: purple;
+}
+
+input:optional {
+  border-color: palevioletred;
+}

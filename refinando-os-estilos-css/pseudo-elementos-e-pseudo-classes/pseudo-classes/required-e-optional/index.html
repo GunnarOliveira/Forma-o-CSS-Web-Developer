@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Pseudo Classes</title>
+  </head>
+  <body>
+    <h1>Pseudo-classes:</h1>
+    <div>
+      <input type="checkbox" name="task-01" />
+      <label for="task-01">:required</label>
+    </div>
+    <div>
+      <input type="checkbox" name="task-02" />
+      <label for="task-02">:optional</label>
+      <hr />
+    </div>
+
+    <form>
+      <h3>Faça sua compra:</h3>
+
+      <label for="email">E-mail:</label>
+      <input type="email" placeholder="Digite aqui seu e-mail" name="email" />
+
+      <label for="codigo-produto">Código Produto:</label>
+      <input type="number" min="1000" max="3000" required />
+
+      <label for="cupom-desconto">Cupom de descontos:</label>
+      <input
+        type="text"
+        name="cupom-desconto"
+        placeholder="apenas letras minúsculas"
+        pattern="[a-z]+"
+      />
+
+      <label for="data-nascimento">Data de nascimento:</label>
+      <input type="date" max="12/31/2004" />
+
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" min="3" max="10" />
+
+      <span>
+        <input type="checkbox" name="concordo" />
+        <label for="concordo">Li e aceito os termos e serciços</label>
+      </span>
+
+      <input type="submit" value="comprar" />
+    </form>
+  </body>
+</html>
