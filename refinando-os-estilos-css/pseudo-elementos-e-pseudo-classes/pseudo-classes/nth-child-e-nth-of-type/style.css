@@ -1,0 +1,51 @@
+/*
+article :nth-child(4) {
+  color: red;
+}
+
+article :nth-of-type(2) {
+  color: blue;
+}
+*/
+input:checked + label {
+  text-decoration: line-through;
+}
+
+#lista-1 li:nth-child(even) {
+  /*even = ordem dos itens pares*/
+  color: red;
+}
+#lista-1 li:nth-child(odd) {
+  /*odd = ordem dos itens ímpares*/
+  color: blue;
+}
+
+#lista-2 li:nth-child(3n + 1) {
+  color: blue;
+}
+table {
+  width: 500px;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+table th:nth-child(1) {
+  text-align: left;
+}
+th,
+td {
+  padding: 1rem;
+  margin: 0;
+}
+td + td,
+th + th {
+  text-align: right;
+}
+td:nth-child(even) {
+  background-color: palevioletred;
+}
+td:nth-child(odd) {
+  background-color: blueviolet;
+}
+th {
+  background-color: palegreen;
+}
