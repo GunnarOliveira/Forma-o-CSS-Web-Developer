@@ -1,0 +1,13 @@
+body {
+  font-family: arial, helvetica, sans-serif;
+}
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+}
+li:only-child {
+  color: red;
+  font-weight: bold;
+}
+div :only-child {
+  color: red;
+}

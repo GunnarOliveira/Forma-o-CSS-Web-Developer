@@ -1,0 +1,13 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+input:checked + label {
+  text-decoration: line-through;
+}
+li:nth-last-child(4n -1) {
+  font-weight: bold;
+  color: purple;
+}
+dl :nth-last-of-type(2) {
+  color: brown;
+}
