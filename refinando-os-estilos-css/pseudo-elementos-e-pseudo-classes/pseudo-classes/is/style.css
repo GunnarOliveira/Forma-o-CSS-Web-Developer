@@ -4,3 +4,24 @@ body {
 input[type="checkbox"]:checked + label {
   text-decoration: line-through;
 }
+/*
+.post h2,
+.post li,
+.post .red {
+  color: red;
+}
+*/
+.post :is(li, h2, .red) {
+  color: blue;
+}
+
+/*
+section p{
+  background-color: pink;
+  font-weight: bold;
+}
+*/
+:is(section) p {
+  background-color: pink;
+  font-weight: bold;
+}
