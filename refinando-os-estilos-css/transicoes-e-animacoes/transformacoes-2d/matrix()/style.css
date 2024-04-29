@@ -1,0 +1,18 @@
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.box {
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+}
+.box:hover {
+  /*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()*/
+  transform: matrix(2, 0, 0, 2, 2, 0);
+}

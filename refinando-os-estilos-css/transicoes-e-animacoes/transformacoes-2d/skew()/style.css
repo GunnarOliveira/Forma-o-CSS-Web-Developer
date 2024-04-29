@@ -1,0 +1,17 @@
+body {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+}
+.box:hover {
+  transform: skew(45deg); /*skew(20deg, 20deg) manipulando eixo X e Y*/
+}
