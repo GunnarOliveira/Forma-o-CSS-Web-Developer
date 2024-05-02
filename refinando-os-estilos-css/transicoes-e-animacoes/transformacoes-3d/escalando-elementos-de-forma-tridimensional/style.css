@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #fff;
+  perspective: 300px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  border-radius: 8px;
+  transform: rotateX(20deg);
+}
+.box:hover {
+  transform: scaleZ(5) rotateX(20deg);
+}

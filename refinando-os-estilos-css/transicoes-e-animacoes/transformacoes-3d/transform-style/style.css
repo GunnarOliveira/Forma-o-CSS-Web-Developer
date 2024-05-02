@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  perspective: 300px;
+  perspective-origin: top;
+  transform-style: preserve-3d;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  position: absolute;
+}
+.box:nth-child(1) {
+  background: linear-gradient(90deg, #fc466b, #daae51);
+  transform: rotateY(40deg);
+}
+.box:nth-child(2) {
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  transform: rotateY(-40deg);
+}

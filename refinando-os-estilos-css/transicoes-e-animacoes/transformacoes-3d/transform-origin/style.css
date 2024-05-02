@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 300px;
+}
+.box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(90deg, #fc466b, #3f5efb);
+  border-radius: 8px;
+  transition: 2s;
+  transform-origin: top right; /*define as ancoras de origem das transformações
+  ,ou seja, serve para scale, skew, rotate e assim vai o trem.
+  */
+}
+.box:hover {
+  transform: scale(1.7);
+}
