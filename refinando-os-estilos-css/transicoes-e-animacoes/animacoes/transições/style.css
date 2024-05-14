@@ -1,0 +1,31 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  transition: width 2s;
+  /*transition: <property> <duration> <timing-function> <delay>;*/
+}
+#box-01 {
+  transition-timing-function: linear;
+}
+#box-02 {
+  transition-timing-function: ease;
+}
+#box-03 {
+  transition-timing-function: ease-in;
+}
+#box-04 {
+  transition-timing-function: ease-out;
+}
+#box-05 {
+  transition-timing-function: ease-in-out;
+}
+div:hover {
+  width: 300px;
+}

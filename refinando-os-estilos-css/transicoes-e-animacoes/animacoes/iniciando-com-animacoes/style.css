@@ -1,0 +1,37 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #d53369;
+  /*
+  animation-name: change-background;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 2s; admite números negativos
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: both;
+  */
+  animation: change-background 5s linear infinite alternate;
+}
+.box:hover {
+  animation-play-state: paused;
+}
+
+@keyframes change-background {
+  0% {
+    background-color: palegreen;
+  }
+  50% {
+    background-color: darkblue;
+  }
+  100% {
+    background-color: purple;
+  }
+}
