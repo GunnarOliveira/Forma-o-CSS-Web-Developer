@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  background: linear-gradient(
+    180deg,
+    rgb(34, 34, 34) 0%,
+    rgb(34, 13, 80) 50%,
+    rgb(74, 153, 230) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: launch 3s ease-in-out infinite alternate 0.05s;
+  overflow: hidden;
+}
+
+@keyframes launch {
+  0% {
+    transform: translateY(20vh);
+  }
+  50% {
+    transform: translateY(-80vh);
+  }
+  100% {
+    transform: translateY(20vh);
+  }
+}
