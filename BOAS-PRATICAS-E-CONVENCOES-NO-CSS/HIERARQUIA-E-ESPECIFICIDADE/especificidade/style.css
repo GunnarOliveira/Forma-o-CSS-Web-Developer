@@ -1,0 +1,12 @@
+body {
+  font-family: Arial, helvetica, sans-serif;
+}
+p {
+  background-color: palegreen;
+}
+#conteudo p {
+  background-color: palevioletred;
+}
+#conteudo p.texto {
+  background-color: blueviolet;
+}

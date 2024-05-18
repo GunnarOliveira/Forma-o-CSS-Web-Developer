@@ -1,0 +1,14 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+.exemplo {
+  border: 2px solid blue;
+  padding: 8px;
+}
+.exemplo p {
+  border: inherit;
+  padding: inherit;
+  /*força o elemento à 
+  pegar os mesmos valores do elemento pai*/
+}

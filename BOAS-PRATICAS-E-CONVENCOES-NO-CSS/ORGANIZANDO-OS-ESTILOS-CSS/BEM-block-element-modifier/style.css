@@ -1,0 +1,46 @@
+:root {
+  --font-size: 5rem;
+  --bg-gradient: linear-gradient(90deg, #fc4660, #3f5efb);
+  --bg-body: rgb(247, 247, 247);
+  --bg-nav-light: rgb(30, 30, 30);
+}
+* {
+  margin: 0;
+}
+body {
+  text-align: center;
+  background-color: var(--bg-body);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  font-size: var(--font-size);
+  background: var(--bg-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  max-width: 500px;
+  margin: 100px auto;
+}
+.menu {
+  background-color: var(--bg-nav-light);
+}
+.menu__list {
+  padding: 24px 0px;
+}
+.menu__item {
+  display: inline-block;
+  color: #fff;
+  margin: 0 16px;
+  cursor: pointer;
+}
+.menu__link {
+  background: var(--bg-gradient);
+  text-decoration: none;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 4px;
+}
+.menu__item--active {
+  color: #00d9ff;
+  font-weight: bold;
+}
