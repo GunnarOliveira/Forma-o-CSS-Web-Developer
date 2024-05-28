@@ -89,6 +89,9 @@ html {
   color: var(--primary-color);
 }
 .btn {
+  font-family: "Quicksand";
+  font-size: 0.8rem;
+  letter-spacing: 3px;
   padding: 16px 40px;
   margin: 0 auto;
   border-radius: 500px;
@@ -97,7 +100,7 @@ html {
   background: var(--btn-bg-color-gradient);
   background-size: 250%;
   text-transform: uppercase;
-  letter-spacing: 2px;
+
   font-size: 1rem;
   font-weight: bold;
   transition: background 1s, outline 1s, transform 1s;

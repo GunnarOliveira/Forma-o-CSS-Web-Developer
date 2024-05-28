@@ -10,12 +10,16 @@ form {
   width: 55%;
   display: flex;
   justify-content: center;
-  align-content: center;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 2.5rem 2.2rem;
   gap: 1.4rem;
   border-radius: 8px;
+}
+form .btn {
+  font-family: "Quicksand";
+  font-size: 0.8rem;
+  letter-spacing: 3px;
 }
 form h2 {
   text-transform: uppercase;
@@ -54,7 +58,9 @@ form h2 {
 @media screen and (max-width: 465px) {
   form {
     width: 70%;
+    align-content: center;
   }
+
   .menu-footer {
     padding-top: 1.5rem;
   }
