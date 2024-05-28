@@ -1,0 +1,65 @@
+body {
+  background: url("/assets/images/background-movies-series.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+form {
+  margin: 2rem auto;
+  background: var(--form-bg-color);
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2.5rem 2.2rem;
+  gap: 1.4rem;
+  border-radius: 8px;
+}
+form h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+  letter-spacing: 1px;
+}
+.input {
+  font-size: 1rem;
+  font-weight: lighter;
+  padding: 1rem;
+  border-radius: 8px;
+  border: none;
+  color: var(--text-color);
+  border: var(--form-field-border);
+  background: var(--form-field-bg-color);
+}
+.form-section {
+  margin-top: 1rem;
+  width: 48%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+}
+.input:required:invalid:focus,
+.input:required:invalid:not(:placeholder-shown) {
+  border-color: var(--form-field-error);
+}
+.input:required:valid {
+  border-color: var(--form-field-border);
+}
+
+@media screen and (max-width: 465px) {
+  form {
+    width: 70%;
+  }
+  .menu-footer {
+    padding-top: 1.5rem;
+  }
+  .form-section {
+    grid-template-columns: 1fr;
+    width: fit-content;
+  }
+}

@@ -1,0 +1,272 @@
+/*fim da nav*/
+.header {
+  padding: 100px 0 300px;
+  position: relative;
+  color: var(--text-color);
+  animation: gradient 10s ease infinite alternate;
+  background: linear-gradient(-45deg, #56125b, #0f0f10, #271e6e);
+  background-size: 400% 400%;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  width: 53%;
+}
+.content__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.content__title {
+  text-align: center;
+}
+.content__text-lighter {
+  font-weight: normal;
+  font-size: 2rem;
+}
+.content__text-bigger {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.divider {
+  height: 5px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--divider-bg-color);
+}
+.offer {
+  font-size: 1.25rem;
+  margin: 0 auto;
+}
+.offer__price {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.offer__price-small {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.header .text--small {
+  max-width: 300px;
+  text-align: center;
+  margin: 0 auto;
+}
+.header::after {
+  content: "";
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(0deg, var(--primary-color), transparent);
+}
+/*fim header*/
+
+.subscription {
+  background: url("/assets/images/background-movies-series.png");
+  background-size: cover;
+  padding: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.card {
+  color: var(--text-color);
+  padding: 40px 60px;
+  width: 40vw;
+  max-width: 600px;
+  min-height: 600px;
+  box-sizing: border-box;
+  background: var(--card-bg-color);
+  border-radius: 8px;
+  transition: transform 1s;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.card-container-box:has(#mutiple:hover) #mobile {
+  transform: rotateY(45deg);
+}
+.card-container-box:has(#mobile:hover) #mutiple {
+  transform: rotateY(-45deg);
+}
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+  height: 90%;
+}
+.card__list-item {
+  font-size: 1.25rem;
+  padding-left: 14px;
+  padding-top: 15px;
+}
+
+.card__list-item::marker {
+  content: "+";
+  font-size: 2rem;
+  margin: 0 8px 0 0;
+}
+.card-container-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.5rem;
+  perspective: 2000px;
+}
+.pink {
+  color: var(--secondary-color);
+}
+/*fim da primeira section*/
+
+.content-catalog {
+  margin-top: 5rem;
+  padding: 30px;
+}
+.catalog-grid {
+  margin-top: 2rem;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+.card-grid {
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  transition: transform 0.8s, background 0.8s, border 1s;
+}
+.card-grid img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
+}
+.card-grid:hover {
+  transform: scale(1.05);
+  border: 2px solid var(--tertiary-color);
+}
+.card-grid:hover img {
+  opacity: 0;
+}
+#grid-1:hover {
+  background: url("/assets/images/hbo-hover_0.webp");
+  background-position: center;
+  background-size: cover;
+}
+#grid-2:hover {
+  background: url("/assets/images/MAX-Hover.webp");
+  background-position: center;
+  background-size: cover;
+}
+#grid-3:hover {
+  background: url("/assets/images/DC-Hover.webp");
+  background-position: center;
+  background-size: cover;
+}
+#grid-4:hover {
+  background: url("/assets/images/WB-Hover.webp");
+  background-position: center;
+  background-size: cover;
+}
+#grid-5:hover {
+  background: url("/assets/images/CN-Hover.png");
+  background-position: center;
+  background-size: cover;
+}
+#grid-6:hover {
+  background: url("/assets/images/UCL-Hover.webp");
+  background-position: center;
+  background-size: cover;
+}
+main {
+  margin-bottom: 100px;
+}
+#cards {
+  scroll-margin-top: 2rem;
+}
+/*fim da segunda section e do main*/
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .header__content {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+  }
+
+  .container h2 {
+    font-size: 1.7rem;
+  }
+  .card {
+    width: 100%;
+  }
+  .offer__price {
+    font-size: 1.5rem;
+  }
+  .card__header h2 {
+    font-size: 1.5rem;
+  }
+  .card__list-item {
+    padding-top: 0.3rem;
+  }
+  .card__header {
+    flex-direction: column;
+  }
+  .card-container-box:has(#mutiple:hover) #mobile {
+    transform: none;
+  }
+  .card-container-box:has(#mobile:hover) #mutiple {
+    transform: none;
+  }
+  .subscription {
+    padding: 1.3rem;
+    text-align: center;
+  }
+  .card .btn {
+    font-size: 0.9rem;
+  } /*segunda section*/
+  .catalog-grid {
+    grid-template-columns: repeat(6, 100%);
+    grid-auto-flow: column;
+    overflow: auto hidden;
+    scroll-snap-align: start;
+    scroll-snap-type: x mandatory;
+  }
+  .card-grid:hover {
+    transform: none;
+    border: 2px solid var(--tertiary-color);
+  }
+}
